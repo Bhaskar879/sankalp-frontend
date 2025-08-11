@@ -22,7 +22,7 @@ function SideNav(props) {
     e.preventDefault();
     // console.log(formData);
 
-    fetch("http://localhost:8000/update", {
+    fetch("https://your-backend.vercel.app/update", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
