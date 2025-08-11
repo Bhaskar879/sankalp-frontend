@@ -31,7 +31,7 @@ function AdminDashboard() {
     // e.preventDefault();
     // console.log(formData);
 
-    fetch("http://localhost:8000/removeUser", {
+    fetch("https://your-backend.vercel.app/removeUser", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
