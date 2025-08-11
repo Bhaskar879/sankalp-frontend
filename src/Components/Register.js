@@ -40,7 +40,7 @@ function Register() {
     e.preventDefault();
     // console.log(formData);
 
-    fetch("http://localhost:8000/register", {
+    fetch("https://your-backend.vercel.app/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
