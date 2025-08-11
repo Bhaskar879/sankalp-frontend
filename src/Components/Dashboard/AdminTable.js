@@ -14,7 +14,7 @@ function AdminTable(props) {
   //  const [_userDataId, _setUserDataId] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:8000/admin")
+    fetch("https://your-backend.vercel.app/admin")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
@@ -27,7 +27,7 @@ function AdminTable(props) {
 
   function postUserId() {
     var obj = { userId: userId };
-    fetch(`http://localhost:8000/resolver/${userId}`, {
+    fetch(`https://your-backend.vercel.app/resolver/${userId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function AdminTable(props) {
 
   function deleteUserId() {
     var obj = { userId: userId };
-    fetch(`http://localhost:8000/delete/${userId}`, {
+    fetch(`https://your-backend.vercel.app/delete/${userId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
