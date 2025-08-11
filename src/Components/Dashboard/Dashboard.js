@@ -11,7 +11,7 @@ function Dahboard() {
   const currUsername = sessionStorage.getItem("username");
 
   useEffect(() => {
-    fetch("http://localhost:8000/register", { method: "POST" })
+    fetch("https://your-backend.vercel.app/register", { method: "POST" })
       .then((res) => res.json())
       .then((data) => {
         // setUserName(data.uname);
