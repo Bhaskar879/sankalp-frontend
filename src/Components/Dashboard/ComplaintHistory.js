@@ -21,7 +21,7 @@ function ComplaintHistory() {
   var sendData = (e) => {
 
 
-    fetch("http://localhost:8000/studentFeedback", {
+    fetch("https://your-backend.vercel.app/studentFeedback", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ function ComplaintHistory() {
 
   function fetchFun() {
 
-    fetch("http://localhost:8000/history")
+    fetch("https://your-backend.vercel.app/history")
       .then((res) => res.json())
       .then((data) => {
         setHistory(data.reverse());
