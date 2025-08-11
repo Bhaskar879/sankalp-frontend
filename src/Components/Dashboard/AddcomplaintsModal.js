@@ -33,7 +33,7 @@ function AddcomplaintsModal(props) {
     e.preventDefault();
     // console.log(formData);
 
-    fetch("http://localhost:8000/complaints", {
+    fetch("https://your-backend.vercel.app/complaints", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
