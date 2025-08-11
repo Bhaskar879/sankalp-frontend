@@ -40,7 +40,7 @@ function ResolverDashboard() {
     // e.preventDefault();
     // console.log(formData);
 
-    fetch("http://localhost:8000/complaints", {
+    fetch("https://your-backend.vercel.app/complaints", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +54,7 @@ function ResolverDashboard() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8000/resolver")
+    fetch("https://your-backend.vercel.app/resolver")
       .then((res) => res.json())
       .then((data) => {
         setcomplaintarray(data.length);
